@@ -1,0 +1,11 @@
+export python='/home/zhangjx/anaconda3/envs/BindingGYM/bin/python' # setup your BindingGYM path
+export ppiformer_python='/home/zhangjx/anaconda3/envs/ppiformer_u/bin/python' # setup your PPIformer path
+export dms_mapping='../../input/BindingGYM.csv'
+export dms_input='../../input/Binding_substitutions_DMS'
+export dms_output='output'
+export structure_folder='../../input/structures'
+export checkpoint_folder='/home/zhangjx/.cache/torch/hub/checkpoints'
+export msa_path='../../input/msas'
+export a2m_root='../combining-evolutionary-and-assay-labelled-data'
+export msa_db_path='/home/zhangjx/af2_database/uniref100/uniref100.fasta' # setup your uniref100.fasta path
+export eve_model_path='../../modelzoo/eve/trained-eve'

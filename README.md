@@ -17,6 +17,62 @@ BindingGym is a comprehensive dataset designed to advance the study of protein-p
 ## Getting Started
 To get started with BindingGym, clone this repository and install the required dependencies. Detailed usage instructions and examples are provided below.
 
+
+### Setup Environment
+
+Create a new environment for running zero-shot prediction and training
+
+`bash install.sh`
+
+If you want to run PPIformer, you need to install an additional environment, see: https://github.com/anton-bushuiev/PPIformer
+
+### Download Data
+
+Download `input.zip`, then decompress it in `BindingGYM`
+
+```
+wget https://zenodo.org/records/12514160/files/input.zip?download=1 -O input.zip
+unzip input.zip
+```
+
+The MSA file is provided, if you need to run `EVE, Tranception, TranceptEVE` on your own data, you'll need to download `Uniref100.fasta` to generate the MSA file
+
+`Uniref100.fasta`: https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref100/uniref100.fasta.gz
+
+As for how to generate MSA files, see `modelzoo/msa_BindingGYM.py`
+
+
+### Setup Configuration
+
+setup your `BindingGYM, PPIformer` environment and `uniref100` path in `modelzoo/config.sh`
+
+### Run zero-shot prediction 
+
+If you want to run `esm-1v`, you can
+
+```
+cd modelzoo/esm-1v
+bash run.sh $gpu_id
+```
+
+if you have multi-gpus, you can run in parallel like this `bash run.sh 0,1`
+
+### Training
+
+```
+cd training
+conda activate BindingGYM
+bash run.sh $gpu_id
+```
+
+### Calculate metrics
+
+see `calc_metric.ipynb`
+
+### Reproduce the paper's results 
+
+see `BindingGYM_final_results.ipynb` and `BindingGYM_SI.ipynb`
+
 ## Resources
 The dataset is deposited at https://zenodo.org/records/12514160
 
