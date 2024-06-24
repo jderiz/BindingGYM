@@ -6,7 +6,7 @@ mode='inter' # ['intra', 'inter']
 batch_size=8
 
 if [ $mode == 'intra' ]; then
-  for i in `seq 0 27`
+  for i in `seq 0 24`
     do
         CUDA_VISIBLE_DEVICES=$1 python $main_file \
           --train_dms_mapping ../input/BindingGYM.csv \
