@@ -18,7 +18,7 @@ BindingGym is a comprehensive dataset designed to advance the study of protein-p
 To get started with BindingGym, clone this repository and install the required dependencies. Detailed usage instructions and examples are provided below.
 
 ## Resources
-The dataset is deposited at .
+The dataset is deposited at https://zenodo.org/records/12514160
 
 ## License
 BindingGym is released under the MIT license.
