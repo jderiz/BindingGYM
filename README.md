@@ -1,4 +1,4 @@
-![header](imgs/header.jpeg)
+![header](imgs/header.png)
 
 # BindingGYM: A Large-Scale Mutational Dataset Toward Deciphering Protein-Protein Interactions
 
