@@ -24,6 +24,12 @@ Create a new environment for running zero-shot prediction and training
 
 `bash install.sh`
 
+or through mamba.
+
+```"${SHELL}" <(curl -L micro.mamba.pm/install.sh)```
+
+```micromamba create --name BindingGYM --file BindingGYM.yml```
+
 ### Download Data
 
 Download `input.zip`, then decompress it in `BindingGYM`

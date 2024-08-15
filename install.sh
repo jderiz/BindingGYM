@@ -1,6 +1,6 @@
 conda create --name BindingGYM python=3.8
 
-conda activate BindingGYM
+source activate BindingGYM
 
 conda install -c conda-forge cudatoolkit=11.7
 
