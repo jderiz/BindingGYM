@@ -80,6 +80,16 @@ see `calc_metric.ipynb`
 
 see `BindingGYM_final_results.ipynb` and `BindingGYM_SI.ipynb`
 
+### Add your dataset to benchmark
+
+Put the file with DMS fitness into `BindingGYM/input/Binding_substitutions_DMS`, then add the PDB file to `BindingGYM/input/structures` and DMS info to `BindingGYM/input/BindingGYM.csv`. Please refer to our data file for the specific format. 
+
+### Add your method to zero-shot benchmark
+
+Creat your method folder in the `BindingGYM/baselines`. If it is a sequence model, suggest refer to `BindingGYM/baselines/esm`, and `BindingGYM/baselines/protein_mpnn` for structure model.
+
+Then add the batch prediction code to `BindingGYM/modelzoo`. The sequence model please refer to `BindingGYM/modelzoo/esm2`, and `BindingGYM/modelzoo/proteinmpnn` for structure model.
+
 ## Resources
 The dataset is deposited at https://zenodo.org/records/12514160
 
