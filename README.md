@@ -1,4 +1,4 @@
-![header](imgs/header.jpeg)
+![header](imgs/header.png)
 
 # BindingGYM: A Large-Scale Mutational Dataset Toward Deciphering Protein-Protein Interactions
 
@@ -23,6 +23,12 @@ To get started with BindingGYM, clone this repository and install the required d
 Create a new environment for running zero-shot prediction and training
 
 `bash install.sh`
+
+or through mamba.
+
+```"${SHELL}" <(curl -L micro.mamba.pm/install.sh)```
+
+```micromamba create --name BindingGYM --file BindingGYM.yml```
 
 ### Download Data
 
