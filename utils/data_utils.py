@@ -4,7 +4,7 @@ import os
 import sys
 from utils.scoring_utils import get_mutated_sequence
 
-def DMS_file_cleanup(DMS_filename, target_seq, start_idx=1, end_idx=None, DMS_mutant_column='mutant', DMS_phenotype_name='score', DMS_directionality=1, AA_vocab = "ACDEFGHIKLMNPQRSTVWY"):
+def DMS_file_cldeanup(DMS_filename, target_seq, start_idx=1, end_idx=None, DMS_mutant_column='mutant', DMS_phenotype_name='score', DMS_directionality=1, AA_vocab = "ACDEFGHIKLMNPQRSTVWY"):
     """
     Borrowed from the Tranception codebase: https://github.com/OATML-Markslab/Tranception/blob/main/tranception/utils/dms_utils.py
     Function to process the raw substitution DMS assay data (eg., removing invalid mutants, aggregate silent mutations).
